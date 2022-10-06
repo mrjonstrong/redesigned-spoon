@@ -22,5 +22,5 @@ jobs:
         restore-keys: ${{ runner.os }}-maven-
         
     - name: Spot Bugs
-      run: mvn com.github.spotbugs:spotbugs-maven-plugin:4.7.2.1-SNAPSHOT:spotbugs:check -B -Pci
+      run: mvn com.github.spotbugs:spotbugs-maven-plugin:4.7.2.0-SNAPSHOT:spotbugs:check -B -Pci
       shell: bash
