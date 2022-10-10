@@ -15,5 +15,5 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-steps:
-  - uses: mrjonstrong/spotbugs-action@c2e116615b9e1e554f0e70d7a32993c2386a622b 
+  spotbugs:
+    uses: mrjonstrong/spotbugs-action/.github/workflows/spotbugs.yml@327e35e692e55b0b0f6324f5d2cf731ce1a23cb4
