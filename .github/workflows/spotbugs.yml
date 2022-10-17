@@ -1,21 +1,12 @@
-# This is a basic workflow to help you get started with Actions
-
 name: SpotBugs
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
 
-
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   security:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
+    name: SpotBugs
     steps:
-      - uses: mrjonstrong/spotbugs-action@e8fa8ebab45dd9e54d830ebe2fc2bbffb5971035
-      - name: spotbugs
+      - name: Spot Bugs
+        uses: mrjonstrong/spotbugs-action@e8fa8ebab45dd9e54d830ebe2fc2bbffb5971035
