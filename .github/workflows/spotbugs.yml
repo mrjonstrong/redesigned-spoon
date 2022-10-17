@@ -9,4 +9,4 @@ jobs:
     name: SpotBugs
     steps:
       - name: Spot Bugs
-        uses: mrjonstrong/spotbugs-action@e8fa8ebab45dd9e54d830ebe2fc2bbffb5971035
+        uses: mrjonstrong/spotbugs-action@8bdf8dbabd1e8ee282def561f74a60f5673879ab
