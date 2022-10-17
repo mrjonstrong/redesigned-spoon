@@ -10,10 +10,12 @@ on:
   pull_request:
     branches: [ "main" ]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  spotbugs:
-    uses: mrjonstrong/spotbugs-action/.github/workflows/spotbugs.yml@main
+  security:
+    runs-on: ubunto-latest
+    steps:
+      - uses: mrjonstrong/spotbugs-action@e8fa8ebab45dd9e54d830ebe2fc2bbffb5971035
+      - name: spotbugs
